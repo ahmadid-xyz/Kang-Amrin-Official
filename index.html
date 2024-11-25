@@ -1,219 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kang Amrin Official</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at center, #000428, #004e92);
-      color: white;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3 {
-      font-weight: 700;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    /* Header Section */
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1));
-      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-      animation: glow 2s infinite alternate;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #00dbde, #fc00ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: neon 3s infinite alternate;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    /* Profile Section */
-    .profile {
-      text-align: center;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      width: 90%;
-      max-width: 700px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    }
-
-    .profile img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 3px solid rgba(255, 255, 255, 0.6);
-      animation: pulse 2s infinite;
-    }
-
-    .profile h2 {
-      margin-top: 1rem;
-      color: #fc00ff;
-    }
-
-    .profile p {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    /* Shop Section */
-    .shop {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem 0;
-    }
-
-    .shop-item {
-      width: 300px;
-      padding: 1rem;
-      border-radius: 15px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-      text-align: center;
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-
-    .shop-item:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
-    }
-
-    .shop-item img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .shop-item h3 {
-      color: #00dbde;
-    }
-
-    .shop-item p {
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 1rem;
-    }
-
-    .shop-item .btn {
-      display: inline-block;
-      padding: 0.5rem 1.5rem;
-      color: white;
-      background: linear-gradient(135deg, #00dbde, #fc00ff);
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: background 0.4s;
-    }
-
-    .shop-item .btn:hover {
-      background: linear-gradient(135deg, #fc00ff, #00dbde);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background: rgba(0, 0, 0, 0.7);
-      margin-top: 3rem;
-      border-top: 2px solid rgba(255, 255, 255, 0.1);
-    }
-
-    footer p {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    /* Animations */
-    @keyframes glow {
-      to {
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-      }
-    }
-
-    @keyframes neon {
-      to {
-        filter: hue-rotate(360deg);
-      }
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
-      }
-      50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kang A Store</title>
+    <style>
+        /* Gaya Dasar */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #f8c471;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: -10px;
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #f8c471;
+            color: #000;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .hero a:hover {
+            background: #ffa500;
+            transform: scale(1.05);
+        }
+        /* Section Artikel */
+        .artikel {
+            padding: 40px 20px;
+            background: #fff;
+            color: #000;
+        }
+        .artikel h2 {
+            text-align: center;
+            color: #f8c471;
+            margin-bottom: 20px;
+        }
+        .artikel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .artikel-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .artikel-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .artikel-card h3 {
+            margin: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .artikel-card p {
+            margin: 15px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .artikel-card a {
+            display: block;
+            padding: 10px 15px;
+            background: #f8c471;
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .artikel-card a:hover {
+            background: #ffa500;
+        }
+        /* Section Produk */
+        .products {
+            padding: 40px 20px;
+            background: #121212;
+        }
+        .products h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f8c471;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .product-card p {
+            font-size: 0.9rem;
+        }
+        .product-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #f8c471;
+            color: #000;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .product-card a:hover {
+            background: #ffa500;
+            transform: scale(1.1);
+        }
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Welcome To Kang Amrin Developer</h1>
-  <p>Store Kang Amrin: Hosting,Suntik Follower, Nokos, Aplikasi Premium, DLL</p>
+    <h1>Store Kang Amrin Official</h1>
+    <p>Store Aman Dan Tercaya</p>
 </header>
 
-<section>
-  <div class="profile">
-    <img src="pputama.jpg" alt="Profile Picture">
-    <h2>Kang Amrin Official</h2>
-    <p>Hai Aku Adalah Kang Amrin Yang Menyediakan Hosting Yang Mungkin Dapat Mempermudah Keseharian Anda</p>
-  </div>
+<section class="hero">
+    <h2>Selamat Datang di Website Kami</h2>
+    <p>
+        Jelajahi berbagai Produk Dan Artikel Kami! Kami Siap Melayani Anda Kapan pun.
+    </p>
+    <a href="#products">Belanja Sekarang</a>
+</section>
 
-  <div class="shop">
-    <div class="shop-item">
-      <img src="shaf.jpg" alt="Produk 1">
-      <h3>SC SHAFBOTZ</h3>
-      <p>Shafbotz Adalah Sc Bot Wa! Yang Dijalankan Menggunakan Bahasa Java Scrip</p>
-      <a href="https://wa.me/6282261613191" class="btn" target="_blank">Beli Sekarang</a>
+<section class="artikel">
+    <h2>Apa Itu Store Kang Amrin?</h2>
+    <div class="artikel-grid">
+        <!-- Artikel 1 -->
+        <div class="artikel-card">
+            <img src="https://img100.pixhost.to/images/377/537010964_skyzopedia.jpg" alt="Artikel 1">
+            <h3>Apakah Aman Belanja Disini</h3>
+            <p>Tentu aman ya guys. karena kami siap melayani anda dengan penuh rasa tanggung jawab, cepat, dan amanah</p>
+            <a href="#">Apakah Anda Ragu?</a>
+        </div>
+        <!-- Artikel 2 -->
+        <div class="artikel-card">
+            <h3>Apakah Disini Prosesnya Cepat?</h3>
+            <p>Kami Dengan Akan Membalas Pesan Anda Secepat Mungkin...</p>
+            <a href="#">24Jam On</a>
+        </div>
+        <!-- Artikel 3 -->
+        <div class="artikel-card">
+            <h3>Apakah Disini Harganya Pas Di Dompet?</h3>
+            <p>Kami Telah Menyediakan Harga Yang Pas Dan Murah Sesuai Dengan Harga Masing Masing Produk</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
     </div>
-    <div class="shop-item">
-      <img src="no.jpg" alt="Produk 2">
-      <h3>NOKOS</h3>
-      <p>Menyediakan Nokos Luar Negeri Maupun Nokos Indo </p>
-      <a href="https://wa.me/6282261613191" class="btn" target="_blank">KLIK UNTUK BELI</a>
+</section>
+
+<section id="products" class="products">
+    <h2>Produk Terbaik Kami</h2>
+    <div class="products-grid">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <img src="https://img100.pixhost.to/images/377/537014381_skyzopedia.jpg" alt="Produk 1">
+            <h3>Apk Premium</h3>
+            <p>Kami Menyediakan Beberapa Aplikasi Premium Youtube,Ig,Alight Motion,CapCut,Spotifys Dll: Dijamin Aman</p>
+            <a href="https://wa.me/6282261613191" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Produk 2 -->
+        <div class="product-card">
+            <img src="https://img100.pixhost.to/images/377/537014437_skyzopedia.jpg" alt="Produk 2">
+            <h3>NOKOS</h3>
+            <p>Kami Menjual Beberapa Nokos Yang Mungkin Anda Suka! Tersedia: Nokos Indo&Luar Negeri</p>
+            <a href="https://wa.me/6282261613191" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Produk 3 -->
+        <div class="product-card">
+            <img src="https://img100.pixhost.to/images/377/537014451_skyzopedia.jpg" alt="Produk 3">
+            <h3>Reseller Apk</h3>
+            <p>Open Reseller Apk Dijamin Balmod</p>
+            <a href="https://wa.me/6282261613191" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Produk 4 -->
+        <div class="product-card">
+            <img src="https://img100.pixhost.to/images/377/537017313_skyzopedia.jpg" alt="Produk 3">
+            <h3>Hosting:Script,VPS Dll</h3>
+            <p>Kami Melayani Jasa Hosting Dengan Harga Yang Terjangkau</p>
+            <a href="https://wa.me/6282261613191" target="_blank">Beli Sekarang</a>
     </div>
-    <div class="shop-item">
-      <img src="ko.jpg" alt="Produk 3">
-      <h3>Aplikasi Premium</h3>
-      <p>Menyediakan Apk prem Youtube, Capcut, Spotifys, Dll</p>
-      <a href="https://wa.me/6282261613191" class="btn" target="_blank">KLIK UNTUK BELI</a>
-    </div>
-    <div class="shop-item">
-      <img src="mu.jpg" alt="produk 4">
-      <h3>Suntik Followers</h3>
-      <p>Menyediakan Jasa Suntik Follower</p>
-      <a href="https://wa.me/6282261613191" class="btn" target="_blank">KLIK UNTUK BELI</a>
-    </div>
-  </div>
 </section>
 
 <footer>
-  <p>&copy; 2024 Web Kang Amrin Official</p>
+    <p>© Kang Amrin Store Official</p>
 </footer>
 
 </body>
