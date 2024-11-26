@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kang amrin</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff7f50, #ff4500);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #ff4500;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://img100.pixhost.to/images/377/537017313_skyzopedia.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Product Section */
+        .products {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+        .product button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .product button:hover {
+            background: #ff7f50;
+        }
+
+        /* Testimonial Section */
+        .testimonials {
+            background: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonials .testimonial {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-style: italic;
+        }
+
+        .testimonials .testimonial span {
+            display: block;
+            margin-top: 10px;
+            color: #ff4500;
+        }
+
+        /* Contact Form */
+        .contact {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact form button:hover {
+            background: #ff7f50;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Toko Kang A Store</h1>
+        <p>Belanja Mudah, Cepat, dan Nyaman!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="https://whatsapp.com/channel/0029VawrJlG72WTuIZ5RVP3F">Testimonial</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Melayani Anda Sepuas Hati</h2>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://img100.pixhost.to/images/377/537014451_skyzopedia.jpg" alt="Produk 1">
+                <h3>Resellers Apk</h3>
+                <p>Rp100.000 - Rp.120.000</p>
+                <button>
+                  <a href="https://wa.me/6282261613191" type="_blank">Beli Sekarang</a>
+                </button>
+            </div>
+            <div class="product">
+                <img src="https://img100.pixhost.to/images/377/537014381_skyzopedia.jpg" alt="Produk 2">
+                <h3>Aplikasi Premium</h3>
+                <p>Rp60.000-Rp80.000</p>
+                <button>
+                  <a href="https://wa.me/6282261613191" type="_blank">Beli Sekarang</a>
+                </button>
+            </div>
+            <div class="product">
+                <img src="https://img100.pixhost.to/images/377/537014437_skyzopedia.jpg" alt="Produk 3">
+                <h3>NOKOS</h3>
+                <p>Rp5.000-Rp45.000</p>
+                <button>
+                  <a href="https://wa.me/6282261613191" type="_blank">Beli Sekarang</a>
+                </button>
+            </div>
+            <div class="product">
+                <img src="https://img100.pixhost.to/images/377/537017313_skyzopedia.jpg" alt="Produk 4">
+                <h3>HOSTINGERS</h3>
+                <p>Rp15.000-Rp50.000</p>
+                <button>
+                  <a href="https://wa.me/6282261613191" type="_blank">Beli Sekarang</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>Apa Kata Pelanggan Kami</h2>
+        <div class="testimonial">
+            <p>"Layanannya luar biasa! Produk sampai tepat waktu dan kualitasnya sangat bagus."</p>
+            <span>- Ahmad, Pinrang</span>
+        </div>
+        <div class="testimonial">
+            <p>"Harganya terjangkau, pelayanannya ramah, dan produk sesuai deskripsi!"</p>
+            <span>- Sari, Bandung</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Kang Amrin Official. Semua Hak Dilindungi.
+    </footer>
+
+</body>
+  </html>
+  
